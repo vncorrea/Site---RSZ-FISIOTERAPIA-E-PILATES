@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
-    <div class="bg-dark position-fixed w-100">
+    <div class="bg-dark position-fixed w-100 z-3">
       <header class="d-flex flex-wrap justify-content-center py-3">
         <a
           href="/"
@@ -58,41 +58,73 @@
     </div>
 
     <main>
-      <section id="home" class="min-vh-100 bg-studioz"></section>
-      <section id="beneficios" class="min-vh-100 bg-light mt-5">
+      <section id="home" class="bg-studioz position-relative">
+        <div class="position-absolute top-50 end-50">
+          <span class="fs-1 text-white">Studio Z Pilates</span>
+        </div>
+        <div>
+          <img src="assets/banner.png" class="w-100 opacity-50" alt="" />
+        </div>
+      </section>
+      <section id="beneficios" class="min-vh-100 bg-dark pt-5">
         <div>
           <h2 class="text-center">Benefícios do Pilates</h2>
-          <p class="text-center">
-            O Pilates é uma atividade física que traz inúmeros benefícios para o
-            corpo e a mente. Conheça alguns deles:
-          </p>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://via.placeholder.com/200"
-                    class="card-img-top"
-                    style="height: 200px; width: 200px"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                  </div>
+          <div class="container pt-3 d-flex flex-row">
+            <div class="col-4 text-end">
+              <div class="d-flex flex-column">
+                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                  <span
+                    class="fs-2 border-bottom ps-5 border-primary text-primary text-habilidades"
+                    style="cursor: pointer"
+                    >Equilíbrio</span
+                  >
+                </div>
+                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                  <span
+                    class="fs-2 text-white text-habilidades"
+                    style="cursor: pointer"
+                    >Postura</span
+                  >
+                </div>
+                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                  <span
+                    class="fs-2 text-white text-habilidades"
+                    style="cursor: pointer"
+                    >Fortalecimento</span
+                  >
+                </div>
+                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                  <span
+                    class="fs-2 text-white text-habilidades"
+                    style="cursor: pointer"
+                    >Concentração</span
+                  >
                 </div>
               </div>
             </div>
+            <div class="col-6 d-flex flex-row">
+              <img src="assets/equilibrio.png" class="" alt="" />
+              <div class="d-flex justify-content-center flex-column ms-5 mb-5">
+                <span class="fs-2 text-white text-center">Equilíbrio</span>
+                <span class="fs-4 text-white text-center mt-4"
+                  >Assim como a yoga, o pilates te ajuda a conquistar o
+                  equilíbrio e a postura ideal. Diga adeus às dores lombares
+                  causadas pela má postura!</span
+                >
+              </div>
+            </div>
+            <div class="col-4"></div>
           </div>
         </div>
       </section>
       <section id="sobre-mim" class="min-vh-100 bg-studioz"></section>
       <section id="nossos-alunos-falam" class="min-vh-100 bg-light"></section>
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
