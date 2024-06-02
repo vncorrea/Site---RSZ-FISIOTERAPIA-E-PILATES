@@ -1,130 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RSZ FISIOTERAPIA E PILATES</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css" />
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
-    </style>
-  </head>
-  <body>
-    <div class="bg-dark position-fixed w-100 z-3">
-      <header class="d-flex flex-wrap justify-content-center py-3">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          previewlistener="true"
-        >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4 text-white">STUDIO Z PILATES</span>
-        </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSZ FISIOTERAPIA E PILATES</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
 
-        <ul class="nav nav-pills">
-          <li class="nav-link">
-            <a
-              href="#"
-              class="text-white text-decoration-none"
-              aria-current="page"
-              >Início</a
-            >
-          </li>
-          <li class="nav-link">
-            <a href="#" class="text-white text-decoration-none">Benefícios</a>
-          </li>
-          <li class="nav-link">
-            <a href="#" class="text-white text-decoration-none">Sobre mim</a>
-          </li>
-          <li class="nav-link">
-            <a href="#" class="text-white text-decoration-none"
-              >Nossos alunos falam</a
-            >
-          </li>
-          <li class="nav-link">
-            <a href="#" class="text-white text-decoration-none">Contato</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
+  </style>
+</head>
 
-    <main>
-      <section id="home" class="bg-studioz position-relative">
-        <div class="position-absolute top-50 end-50">
-          <span class="fs-1 text-white">Studio Z Pilates</span>
-        </div>
-        <div>
-          <img src="assets/banner.png" class="w-100 opacity-50" alt="" />
-        </div>
-      </section>
-      <section id="beneficios" class="min-vh-100 bg-dark pt-5">
-        <div>
-          <h2 class="text-center">Benefícios do Pilates</h2>
-          <div class="container pt-3 d-flex flex-row">
-            <div class="col-4 text-end">
-              <div class="d-flex flex-column">
-                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
-                  <span
-                    class="fs-2 border-bottom ps-5 border-primary text-primary text-habilidades"
-                    style="cursor: pointer"
-                    >Equilíbrio</span
-                  >
-                </div>
-                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
-                  <span
-                    class="fs-2 text-white text-habilidades"
-                    style="cursor: pointer"
-                    >Postura</span
-                  >
-                </div>
-                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
-                  <span
-                    class="fs-2 text-white text-habilidades"
-                    style="cursor: pointer"
-                    >Fortalecimento</span
-                  >
-                </div>
-                <div class="py-4 pe-5" onclick="clickHabilidades(this)">
-                  <span
-                    class="fs-2 text-white text-habilidades"
-                    style="cursor: pointer"
-                    >Concentração</span
-                  >
-                </div>
+<body>
+  <div class="bg-dark position-fixed w-100 z-3">
+    <header class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        previewlistener="true">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4 text-white">STUDIO Z PILATES</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-link">
+          <a href="#" class="text-white text-decoration-none" aria-current="page">Início</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="text-white text-decoration-none">Benefícios</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="text-white text-decoration-none">Sobre mim</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="text-white text-decoration-none">Nossos alunos falam</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="text-white text-decoration-none">Contato</a>
+        </li>
+      </ul>
+    </header>
+  </div>
+
+  <main>
+    <section id="home" class="bg-studioz position-relative">
+      <div class="position-absolute top-50 end-50">
+        <span class="fs-1 text-white">Studio Z Pilates</span>
+      </div>
+      <div>
+        <img src="assets/banner.png" class="w-100 opacity-50" alt="" />
+      </div>
+    </section>
+    <section id="beneficios" class="min-vh-100 bg-dark pt-5">
+      <div>
+        <h2 class="text-center">Benefícios do Pilates</h2>
+        <div class="container pt-3 d-flex flex-row">
+          <div class="col-4 text-end">
+            <div class="d-flex flex-column">
+              <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                <span class="fs-2 border-bottom  border-primary text-primary text-habilidades"
+                  data-habilidade="equilibrio" style="cursor: pointer">Equilíbrio</span>
+              </div>
+              <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                <span class="fs-2 text-white text-habilidades" data-habilidade="postura"
+                  style="cursor: pointer">Postura</span>
+              </div>
+              <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                <span class="fs-2 text-white text-habilidades" data-habilidade="fortalecimento"
+                  style="cursor: pointer">Fortalecimento</span>
+              </div>
+              <div class="py-4 pe-5" onclick="clickHabilidades(this)">
+                <span class="fs-2 text-white text-habilidades" data-habilidade="concentracao"
+                  style="cursor: pointer">Concentração</span>
               </div>
             </div>
-            <div class="col-6 d-flex flex-row">
-              <img src="assets/equilibrio.png" class="" alt="" />
-              <div class="d-flex justify-content-center flex-column ms-5 mb-5">
-                <span class="fs-2 text-white text-center">Equilíbrio</span>
-                <span class="fs-4 text-white text-center mt-4"
-                  >Assim como a yoga, o pilates te ajuda a conquistar o
-                  equilíbrio e a postura ideal. Diga adeus às dores lombares
-                  causadas pela má postura!</span
-                >
-              </div>
+          </div>
+          <div class="col-6 d-flex flex-row info_habilidade_equilibrio">
+            <img src="assets/equilibrio.png" class="" alt="" />
+            <div class="d-flex justify-content-center flex-column ms-5 mb-5">
+              <span class="fs-2 text-white text-center">Equilíbrio</span>
+              <span class="fs-4 text-white text-center mt-4">Assim como a yoga, o pilates te ajuda a conquistar o
+                equilíbrio e a postura ideal. Diga adeus às dores lombares
+                causadas pela má postura!</span>
             </div>
-            <div class="col-4"></div>
+          </div>
+          <div class="col-6 d-flex flex-row info_habilidade_postura d-none">
+            <img src="assets/equilibrio.png" class="" alt="" />
+            <div class="d-flex justify-content-center flex-column ms-5 mb-5">
+              <span class="fs-2 text-white text-center">Postura</span>
+              <span class="fs-4 text-white text-center mt-4">Assim como a yoga, o pilates te ajuda a conquistar o
+                equilíbrio e a postura ideal. Diga adeus às dores lombares
+                causadas pela má postura!</span>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-row info_habilidade_fortalecimento d-none">
+            <img src="assets/equilibrio.png" class="" alt="" />
+            <div class="d-flex justify-content-center flex-column ms-5 mb-5">
+              <span class="fs-2 text-white text-center">Fortalecimento</span>
+              <span class="fs-4 text-white text-center mt-4">Os exercícios do pilates trabalham vários grupos
+                musculares, fortalecendo todo o seu corpo. Além disso, beneficiam as articulações, deixando seus
+                movimentos mais suaves e flexíveis.</span>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-row info_habilidade_concentracao d-none">
+            <img src="assets/equilibrio.png" class="" alt="" />
+            <div class="d-flex justify-content-center flex-column ms-5 mb-5">
+              <span class="fs-2 text-white text-center">Concentração</span>
+              <span class="fs-4 text-white text-center mt-4">Respirar fundo é um truque simples e poderoso para
+                combater o estresse. No pilates, você combina a respiração profunda e correta com os movimentos, para
+                ir além da prática e conquistar bem-estar completo!</span>
+            </div>
           </div>
         </div>
-      </section>
-      <section id="sobre-mim" class="min-vh-100 bg-studioz"></section>
-      <section id="nossos-alunos-falam" class="min-vh-100 bg-light"></section>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-  </body>
+        <div class="col-4"></div>
+      </div>
+      </div>
+    </section>
+    <section id="sobre-mim" class="min-vh-100 bg-studioz"></section>
+    <section id="nossos-alunos-falam" class="min-vh-100 bg-light"></section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
