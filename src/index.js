@@ -39,3 +39,16 @@ const selecionarHabilidade = function (habilidade) {
 
   infoHabilidade.classList.remove("d-none");
 };
+
+const selecionarSecao = function (e) {
+  let secao = this.event.target.getAttribute("data-secao");
+
+  if (secao) {
+    let secaoSelecionada = document.getElementById(secao);
+    console.log(document.querySelector(secao));
+
+    if (secaoSelecionada) {
+      secaoSelecionada.scrollIntoView();
+    }
+  }
+};
