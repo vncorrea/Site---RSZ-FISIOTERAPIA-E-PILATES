@@ -41,15 +41,18 @@ const selecionarHabilidade = function (habilidade) {
 };
 
 const selecionarSecao = function (e) {
-  let secao = this.event.target.getAttribute("data-secao");
+  const secao = this.event.target.getAttribute("data-secao");
+  const navbar = document.querySelector(".navbar-collapse");
 
   if (secao) {
-    let secaoSelecionada = document.getElementById(secao);
-    console.log(document.querySelector(secao));
+    const secaoSelecionada = document.getElementById(secao);
 
     if (secaoSelecionada) {
       secaoSelecionada.scrollIntoView();
     }
+
+    const bsCollapse = new bootstrap.Collapse(navbar, { toggle: false });
+    bsCollapse.hide();
   }
 };
 
@@ -60,7 +63,22 @@ const enviarDados = function () {
     let nome = document.querySelector('input[type="text"]').value;
     let email = document.querySelector('input[type="email"]').value;
     let mensagem = document.querySelector("textarea").value;
-
-    console.log(nome, email, mensagem);
   });
 };
+
+window.addEventListener("scroll", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link a");
+
+  sections.forEach((section, index) => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (
+      sectionTop <= window.innerHeight / 2 &&
+      sectionTop >= -window.innerHeight / 2
+    ) {
+      navLinks.forEach((navLink) => navLink.classList.remove("text-primary"));
+      navLinks[index].classList.add("text-primary");
+    }
+  });
+});

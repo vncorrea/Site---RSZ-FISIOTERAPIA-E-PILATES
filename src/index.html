@@ -16,8 +16,8 @@
 
 <body>
   <div class="bg-dark position-fixed w-100 z-3">
-    <header class="d-flex flex-wrap justify-content-center py-3">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <header class="d-flex flex-wrap justify-content-between py-3">
+      <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         previewlistener="true">
         <svg class="bi me-2" width="40" height="32">
           <use xlink:href="#bootstrap"></use>
@@ -25,28 +25,40 @@
         <span class="fs-4 text-white">STUDIO Z PILATES</span>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-link">
-          <a href="#" class="text-white text-decoration-none" aria-current="page">Início</a>
-        </li>
-        <li class="nav-link" onclick="selecionarSecao()">
-          <a data-secao="beneficios" style="cursor: pointer;" class="text-white text-decoration-none">Benefícios</a>
-        </li>
-        <li class="nav-link" onclick="selecionarSecao()">
-          <a data-secao="sobre-mim" style="cursor: pointer;" class="text-white text-decoration-none">Sobre mim</a>
-        </li>
-        <li class="nav-link" onclick="selecionarSecao()">
-          <a style="cursor: pointer;" data-secao="nossos-alunos-falam" class="text-white text-decoration-none">Nossos
-            alunos falam</a>
-        </li>
-        <li class="nav-link" onclick="selecionarSecao()">
-          <a style="cursor: pointer;" data-secao="aulas-comunitarias" class="text-white text-decoration-none">Aulas
-            comunitárias</a>
-        </li>
-        <li class="nav-link">
-          <a href="#" class="text-white text-decoration-none">Contato</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-end">
+          <button class="navbar-toggler bg-light btn_header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-link text-end me-1">
+                <a href="#" class="text-white text-decoration-none" aria-current="page">Início</a>
+              </li>
+              <li class="nav-link text-end me-1" onclick="selecionarSecao()">
+                <a data-secao="beneficios" style="cursor: pointer;"
+                  class="text-white text-decoration-none texto-nav">Benefícios</a>
+              </li>
+              <li class="nav-link text-end me-1" onclick="selecionarSecao()">
+                <a data-secao="sobre-mim" style="cursor: pointer;"
+                  class="texto-nav text-white text-decoration-none">Sobre
+                  mim</a>
+              </li>
+              <li class="nav-link text-end me-1" onclick="selecionarSecao()">
+                <a style="cursor: pointer;" data-secao="nossos-alunos-falam"
+                  class="texto-nav text-white text-decoration-none">Nossos
+                  alunos falam</a>
+              </li>
+              <li class="nav-link text-end me-1" onclick="selecionarSecao()">
+                <a style="cursor: pointer;" data-secao="aulas-comunitarias"
+                  class="texto-nav text-white text-decoration-none">Aulas
+                  comunitárias</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
   </div>
 
@@ -83,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row info_habilidade_equilibrio">
+          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row align-items-center info_habilidade_equilibrio mb-3">
             <img src="assets/equilibrio.png" style="width: 414px; height: 660px;" class="" alt="" />
             <div class="d-flex justify-content-center flex-column ms-md-5 mb-5">
               <span class="fs-2 text-white text-center mt-3 mt-md-0">Equilíbrio</span>
@@ -91,7 +103,7 @@
                 alcançar um ótimo equilíbrio corporal e mental.</span>
             </div>
           </div>
-          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row info_habilidade_postura d-none">
+          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row align-items-center info_habilidade_postura d-none mb-3">
             <img src="assets/postura.png" class="" style="width: 414px; height: 660px;" alt="" />
             <div class="d-flex justify-content-center flex-column ms-md-5 mb-5">
               <span class="fs-2 text-white text-center mt-3 mt-md-0">Postura</span>
@@ -100,7 +112,8 @@
                 correta!</span>
             </div>
           </div>
-          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row info_habilidade_fortalecimento d-none">
+          <div
+            class="col-lg-8 col-12 d-flex flex-column flex-md-row align-items-center info_habilidade_fortalecimento d-none mb-3">
             <img src="assets/fortalecimento.png" style="width: 414px; height: 660px;" class="" alt="" />
             <div class="d-flex justify-content-center flex-column ms-md-5 mb-5">
               <span class="fs-2 text-white text-center mt-3 mt-md-0">Fortalecimento</span>
@@ -109,7 +122,8 @@
                 movimentos mais suaves e flexíveis.</span>
             </div>
           </div>
-          <div class="col-lg-8 col-12 d-flex flex-column flex-md-row info_habilidade_concentracao d-none ">
+          <div
+            class="col-lg-8 col-12 d-flex flex-column flex-md-row align-items-center info_habilidade_concentracao d-none mb-3">
             <img src="assets/concentracao.png" class="" style="width: 414px; height: 660px;" alt="" />
             <div class="d-flex justify-content-center flex-column ms-md-5 mb-5">
               <span class="fs-2 text-white text-center mt-3 mt-md-0">Concentração</span>
@@ -212,11 +226,11 @@
     </section>
     <section id="aulas-comunitarias" class="min-vh-100 bg-studioz d-flex flex-column  align-items-center">
       <span class="fs-3 my-3 text-white">Aulas comunitárias</span>
-      <span class="fs-5 text-white mb-3" style="padding-left: 20%; padding-right: 20%; text-align: center">Venha
+      <span class="fs-5 text-white mb-5" style="padding-left: 20%; padding-right: 20%; text-align: center">Venha
         participar da nossa aula comunitária de Pilates no Parque Ecológico de Cravinhos! Este evento totalmente
         gratuito é uma oportunidade imperdível para aprender e praticar Pilates em meio à natureza.</span>
       <div class="container d-flex flex-column flex-lg-row">
-        <div class="col-8 d-flex align-items-center">
+        <div class="col-12 col-lg-8 d-flex justify-content-center justify-content-lg-start mb-5 mb-lg-0">
           <div class="datepicker">
             <div class="datepicker-top">
               <div class="month-selector">
@@ -276,7 +290,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex justify-content-center align-self-center">
+        <div class="col-12 col-lg-4  d-flex justify-content-center align-self-center mb-5 mb-lg-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.772169831765!2d-47.73954676793323!3d-21.335541226542077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c984356b2b81%3A0xc25f8d5ca80826f2!2sParque%20Ecol%C3%B3gico%20de%20Cravinhos!5e0!3m2!1spt-BR!2sbr!4v1717458072442!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
