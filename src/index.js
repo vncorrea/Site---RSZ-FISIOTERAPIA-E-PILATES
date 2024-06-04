@@ -48,14 +48,19 @@ const selecionarSecao = function (e) {
     const secaoSelecionada = document.getElementById(secao);
 
     if (secaoSelecionada) {
-      secaoSelecionada.scrollIntoView();
+      secaoSelecionada.scrollIntoView({
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {
+        window.scrollBy(0, -80);
+      }, 600);
     }
 
     const bsCollapse = new bootstrap.Collapse(navbar, { toggle: false });
     bsCollapse.hide();
   }
 };
-
 const enviarDados = function () {
   document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
