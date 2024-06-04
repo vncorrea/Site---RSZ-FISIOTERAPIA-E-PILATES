@@ -52,3 +52,15 @@ const selecionarSecao = function (e) {
     }
   }
 };
+
+const enviarDados = function () {
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let nome = document.querySelector('input[type="text"]').value;
+    let email = document.querySelector('input[type="email"]').value;
+    let mensagem = document.querySelector("textarea").value;
+
+    console.log(nome, email, mensagem);
+  });
+};

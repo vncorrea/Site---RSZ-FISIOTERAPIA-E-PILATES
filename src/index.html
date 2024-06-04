@@ -210,7 +210,11 @@
         </div>
       </div>
     </section>
-    <section id="aulas-comunitarias" class="min-vh-100 bg-studioz d-flex align-items-center">
+    <section id="aulas-comunitarias" class="min-vh-100 bg-studioz d-flex flex-column  align-items-center">
+      <span class="fs-3 my-3 text-white">Aulas comunitárias</span>
+      <span class="fs-5 text-white mb-3" style="padding-left: 20%; padding-right: 20%; text-align: center">Venha
+        participar da nossa aula comunitária de Pilates no Parque Ecológico de Cravinhos! Este evento totalmente
+        gratuito é uma oportunidade imperdível para aprender e praticar Pilates em meio à natureza.</span>
       <div class="container d-flex flex-column flex-lg-row">
         <div class="col-8 d-flex align-items-center">
           <div class="datepicker">
@@ -279,9 +283,34 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-
     </section>
+    <div class=""></div>
   </main>
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 d-flex flex-column ">
+          <img src="assets/logo_studio_z.png" alt="">
+          <span class="fs-5 text-white">Todos os direitos reservados ©</span>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contato</h5>
+          <form>
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" placeholder="Seu Nome">
+            </div>
+            <div class="form-group mb-2">
+              <input type="email" class="form-control" placeholder="Seu Email">
+            </div>
+            <div class="form-group mb-2">
+              <textarea class="form-control" rows="3" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button type="submit" onclick="enviarDados()" class="btn btn-primary btn-block">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
